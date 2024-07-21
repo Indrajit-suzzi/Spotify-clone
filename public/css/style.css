@@ -126,9 +126,38 @@ a{
     opacity: 1;
 }
 
-.dark-badge{
+.white-badge{
+    opacity: 0.85;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    height: 1.5rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.white-badge:hover{
+    transform: scale(1.035);
+}
+
+.black-badge{
     background-color: #000;
     color: white;
+    opacity: 0.85;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    height: 1.95rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.black-badge:hover{
+    transform: scale(1.035);
 }
 
 .library .recent-bar{
@@ -187,14 +216,83 @@ a{
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     background-color: #383838;
     border-radius: 0.25rem;
-  }
+}
 
-.footer {
-    height: 200px;
-    background-color: #e70f0f;
-    color: #b3b3b3;
-    padding: 20px;
-    text-align: center;
+.sticky-bar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.back-for img{
+    height: 1.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account button{
+    margin-right: 0.5rem;
+}
+
+.account img{
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.black-img{
+    background-color: #000;
+    opacity: 0.85;
+    border: none;
+    border-radius: 50%;
+    padding: 0.25rem 0.25rem;
+    margin-top: 0.25rem;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-img:hover{
+    transform: scale(1.03);
+}
+
+.main-content{
+    background: linear-gradient(to bottom, #0f0a22, #524d92, #20203b);
+}
+
+.big-font{
+    margin-top: 3rem;
+    display: flex;
+    align-items: end;
+}
+
+.big-font img{
+    border-radius: 0.5rem;
+    height: 12rem;
+}
+
+.big-letter{
+    margin-left: 0.5rem;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.name img{
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.1rem solid black;
 }
 
 .music-player{
