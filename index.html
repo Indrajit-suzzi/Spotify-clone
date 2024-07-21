@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="icon" href="./assets/logo.png">
+    <link rel="icon" href="./public/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="style.css" rel="stylesheet">
+    <link href="./public/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,165 +32,73 @@
             <div class="library">
                 <div class="option">
                     <div class="lib-option nav-option">
-                        <img src="./assets/library_icon.png">
+                        <img src="./public/images/library_icon.png">
                         <a href="#">Your Library</a>
                     </div>
                     <div class="icons">
                         <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
-                <div class="boxes">
-                    <p class="box-p1">Create your first playlist</p>
-                    <p class="box-p2">It's easy, we'll help you</p>
-                    <button class="badge">Create playlist</button>
+                <div style="margin: 0.25rem 0.75rem;">
+                    <button class="badge">Artist</button>&nbsp;&nbsp;&nbsp;<button class="badge">Podcasts & Shows</button>
                 </div>
-                <div class="boxes">
-                    <p class="box-p1">Let's find some podcasts to follow</p>
-                    <p class="box-p2">We'll keep you updated on new episodes</p>
-                    <button class="badge">Browse podcasts</button>
+                <div class="recent-bar">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="recents">
+                        <a href="#" style="margin-right: 0.25rem;">Recents</a>
+                        <i class="fa-solid fa-bars" style="font-size: 1rem;"></i>
+                    </div>
+                </div>
+                <div class="lib-playlist">
+                    <a href="like-song.html">
+                    <div class="box" id="like-song">
+                        <img src="./public/images/like songs.jpeg">
+                        <p style="margin-left: 0.75rem;">Liked Songs</p>
+                    </div></a>
+                    <div class="box">
+                        <img src="./public/images/Your episode.png">
+                        <a href="#">Your Episodes</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="main-content">
-            <div class="sticky-nav">
-                <div class="sticky-nav-icons">
-                    <img src="./assets/backward_icon.png">
-                    <img src="./assets/forward_icon.png" class="hide">
-                </div>
-                <div class="sticky-nav-options">
-                    <button class="badge nav-item hide">Explore Premium</button>
-                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"
-                            style="margin-right: 5px;"></i>Install App</button>
-                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-bell dark-badge"></i></button>
-                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-user nav-item"
-                            style="margin-left: 10px;"></i></button>
-                </div>
-            </div>
-            <h2>Recently Played</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="./assets/card1img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Top 50 - Global</p>
-                    <p class="card-info">Your daily update of the most played...</p>
-                </div>
-            </div>
-            <h2>Trending now near you</h2>
-            <div class="cards_container">
-                <div class="card">
-                    <img src="./assets/card2img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Mahiye jinna sohna</p>
-                    <p class="card-info">Darshan Raval</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/card3img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Mere paas tum ho</p>
-                    <p class="card-info">Lofi Mix - Vishal</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/card4img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Alter ego na ready</p>
-                    <p class="card-info">LEO,thalapathy vijay</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/card7img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Sajni(From 'Laapataa Ladies')</p>
-                    <p class="card-info">Ram Sampath,Arijit Singh,Prasant Pandey</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/card8img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Aashiqui 2</p>
-                    <p class="card-info">Mithoon,Ankit Tiwari,Jeet Ganguli</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/card9img.jpeg" class="card-img">
-                    <i class="fas fa-play-circle play-icon"></i>
-                    <p class="card-title">Still Rollin</p>
-                    <p class="card-info">Shubh</p>
-                </div>
-                <h2 style="width: 100%;">Featured Charts</h2>
-                <div class="cards_container">
-                    <div class="card">
-                        <img src="./assets/card1img.jpeg" class="card-img">
-                        <i class="fas fa-play-circle play-icon"></i>
-                        <p class="card-title">Top 50 - Global</p>
-                        <p class="card-info">Your daily update of the most played...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/card6img.jpeg" class="card-img">
-                        <i class="fas fa-play-circle play-icon"></i>
-                        <p class="card-title">Top songs - India</p>
-                        <p class="card-info">Your weekly update of the most played...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/card5img.jpeg" class="card-img">
-                        <i class="fas fa-play-circle play-icon"></i>
-                        <p class="card-title">Top songs - Global</p>
-                        <p class="card-info">Your weekly update of the most played...</p>
+            <div class="music-player">
+                <div class="albam">
+                    <img src="./public/images/card2img.jpeg" class="albam-img">
+                    <div class="albam-p">
+                        <p class="albam-p1">Mahiye jinna sohna</p>
+                        <p class="albam-p2">Darshan Raval</p>
                     </div>
                 </div>
+                <div class="player">
+                    <div class="player-controls">
+                        <img src="./public/images/player_icon1.png" class="player-control-icon">
+                        <img src="./public/images/player_icon2.png" class="player-control-icon">
+                        <img src="./public/images/player_icon3.png" class="player-control-icon"
+                            style="opacity: 1; height: 2rem;">
+                        <img src="./public/images/player_icon4.png" class="player-control-icon">
+                        <img src="./public/images/player_icon5.png" class="player-control-icon">
+                    </div>
+                    <div class="playback-bar">
+                        <span class="curr-time">00:00</span>
+                        <input type="range" min="0" max="100" class="progress-bar" step="1">
+                        <span class="total-time">03:33</span>
+                    </div>
                 </div>
-                <div class="footer">
-                    <div class="links">
-                        <a href="#">About</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">For the Record</a>
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Ads</a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <p>&copy; 2024 Spotify AB</p>
-                </div> 
-                <div class="music-player">
-                    <div class="albam">
-                        <img src="./assets/card2img.jpeg" class="albam-img">
-                        <div class="albam-p">
-                            <p class="albam-p1">Mahiye jinna sohna</p>
-                            <p class="albam-p2">Darshan Raval</p>
-                        </div>
-                        <img src="./assets/album_icon1.png" class="albam-icon">
-                        <img src="./assets/album_icon2.png" class="albam-icon" style="height: 2.25rem;">
-                    </div>
-                    <div class="player">
-                        <div class="player-controls">
-                            <img src="./assets/player_icon1.png" class="player-control-icon">
-                            <img src="./assets/player_icon2.png" class="player-control-icon">
-                            <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
-                            <img src="./assets/player_icon4.png" class="player-control-icon">
-                            <img src="./assets/player_icon5.png" class="player-control-icon">
-                        </div>
-                        <div class="playback-bar">
-                            <span class="curr-time">00:00</span>
-                            <input type="range" min="0" max="100" class="progress-bar" step="1">
-                            <span class="total-time">03:33</span>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <img src="./assets/controls_icon1.png" class="controls-img" style="opacity: 0.5;">
-                        <img src="./assets/controls_icon3.png" class="controls-img" style="height: 1.5rem;">
-                        <img src="./assets/controls_icon4.png" class="controls-img" style="height: 1.25rem;">
-                        <img src="./assets/controls_icon5.png" class="controls-img">
-                        <input type="range" min="0" max="100" class="volume-bar" step="1">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                    </div>
+                <div class="controls">
+                    <img src="./public/images/controls_icon1.png" class="controls-img" style="opacity: 0.5;">
+                    <img src="./public/images/controls_icon3.png" class="controls-img" style="height: 1.5rem;">
+                    <img src="./public/images/controls_icon4.png" class="controls-img" style="height: 1.25rem;">
+                    <img src="./public/images/controls_icon5.png" class="controls-img">
+                    <input type="range" min="0" max="100" class="volume-bar" step="1">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                 </div>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    </div>
+    <script src="./public/js/script.js"></script>
 </body>
 
 </html>

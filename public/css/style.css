@@ -1,0 +1,339 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.5rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.8;
+    padding: 0.15rem 0.5rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin-top: 0.4rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.icons{
+    font-size: 1.1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.badge{
+    background-color: #383838;
+    color: white;
+    opacity: 0.85;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    height: 1.75rem;
+    width: fit-content;
+    cursor: pointe;
+}
+
+.badge:hover{
+    opacity: 1;
+}
+
+.dark-badge{
+    background-color: #000;
+    color: white;
+}
+
+.library .recent-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.55rem;
+}
+
+.search-icon{
+    opacity: 0.7;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.search-icon:hover{
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.recent-bar .recents{
+    margin-right: 0.5rem;
+    opacity: 0.7;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.recents:hover{
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.lib-playlist{
+    margin: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.lib-playlist img{
+    height: 3.25rem;
+    border-radius: 0.5rem;
+}
+
+.lib-playlist .box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.35rem 0.25rem 0.35rem 0.25rem;
+}
+
+.lib-playlist .box a{
+    margin-left: 0.75rem;
+}
+
+.lib-playlist .box:hover{
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    background-color: #383838;
+    border-radius: 0.25rem;
+  }
+
+.footer {
+    height: 200px;
+    background-color: #e70f0f;
+    color: #b3b3b3;
+    padding: 20px;
+    text-align: center;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.albam{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0 1.75rem 0 1.75rem;
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0 1.75rem 0 1.75rem;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.controls-img{
+    height: 2.25rem;
+    align-items: center;
+    padding: 0 0.5rem 0 0.5rem;
+    opacity: 0.5;
+}
+
+.controls-img:hover{
+    opacity: 1;
+}
+
+.volume-bar{
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.volume-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.volume-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.controls i{
+    padding: 0 0.5rem 0 0.5rem;
+    opacity: 0.5;
+}
+
+.controls i:hover{
+    opacity: 1;
+}
+
+.albam-img{
+    height: 3.25rem;
+    border-radius: 0.5rem 0.5rem;
+}
+
+.albam-icon{
+    height: 1.75rem;
+    opacity: 0.7;
+    padding: 0.25rem;
+}
+
+.albam-icon:hover{
+    opacity: 1;
+}
+
+.albam-p{
+    padding: 0 1rem 0 1rem;
+}
+
+.albam-p1{
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.albam-p2{
+    font-size: 0.65rem;
+    opacity: 0.8;
+}
