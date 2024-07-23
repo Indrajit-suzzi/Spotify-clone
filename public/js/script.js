@@ -1,5 +1,10 @@
-document.getElementById('like-song').onclick = function() {
-    app.get("/collection/tracks", (req,res) => {
-        res.render("like-song.ejs");
-    })
-}
+const music = new Audio('/audio/01.mp3')
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('music');
+
+    function myFunction() {
+        music.play();
+    }
+
+    button.addEventListener('click', myFunction);
+});

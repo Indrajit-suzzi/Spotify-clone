@@ -222,8 +222,10 @@ a{
     display: flex;
     justify-content: space-between;
     position: sticky;
+    top: 0;
     align-items: center;
     margin-top: 0.5rem;
+    padding:0 1.5rem;
 }
 
 .back-for img{
@@ -266,13 +268,15 @@ a{
 }
 
 .main-content{
-    background: linear-gradient(to bottom, #0f0a22, #524d92, #20203b);
+    background: linear-gradient(to bottom, #20164a, #524d92, #000000);
+    padding: 0 0;
 }
 
 .big-font{
     margin-top: 3rem;
     display: flex;
     align-items: end;
+    padding:0 1.5rem;
 }
 
 .big-font img{
@@ -293,6 +297,44 @@ a{
     height: 1.5rem;
     border-radius: 50%;
     border: 0.1rem solid black;
+}
+
+.music-list{
+    background: linear-gradient(to bottom, #150937, #1e1b3f, #000000);
+}
+
+.mid-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    align-items: center;
+    padding:0.75rem 1.5rem;
+}
+
+.music-list .play{
+    font-size: 3.75rem;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border-radius: 50%;
+}
+
+.list-i{
+    opacity: 0.8;
+}
+
+.list-i a{
+    margin-right: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.list-i:hover{
+    opacity: 1;
+}
+
+
+
+.song-img{
+    height: 1rem;
 }
 
 .music-player{
@@ -325,6 +367,26 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+
+#toggleButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #010101;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#toggleButton.play {
+    background-image: url('/images/player_icon3.png');
+}
+
+#toggleButton.pause {
+    background-image: url('/images/puse_icon.jpg');
 }
 
 .player-control-icon{
